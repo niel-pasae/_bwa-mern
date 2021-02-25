@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 export default function Button(props) {
   const className = [];
+  className.push(props.className);
   if (props.isPrimary) className.push("btn-primary");
   if (props.isSmall) className.push("btn-sm");
   if (props.isLarge) className.push("btn-lg");
